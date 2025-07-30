@@ -112,6 +112,7 @@ allow gmscore_app persistent_data_block_service:service_manager find;
 allow gmscore_app radio_service:service_manager find;
 allow gmscore_app recovery_service:service_manager find;
 allow gmscore_app stats_service:service_manager find;
+allow gmscore_app system_adbd_prop:file read;
 
 # Used by Finsky / Android "Verify Apps" functionality when
 # running "adb install foo.apk".

@@ -111,6 +111,7 @@ allow gmscore_app persistent_data_block_service:service_manager find;
 allow gmscore_app radio_service:service_manager find;
 allow gmscore_app recovery_service:service_manager find;
 allow gmscore_app stats_service:service_manager find;
+allow gmscore_app system_adbd_prop:file read;
 
 # Write to /cache.
 allow gmscore_app { cache_file cache_recovery_file }:dir create_dir_perms;
